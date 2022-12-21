@@ -13,7 +13,7 @@ void Widget::SetupUI() {
   QFont labelFont("Times", 10, QFont::Bold);
   QLabel *mLabel = new QLabel("This is my text", this);
   mLabel->setFont(labelFont);
-  mLabel->move(100, 25);
+  mLabel->move(100, 20);
 
   QTextEdit *textEdit = new QTextEdit(this);
   textEdit->move(70, 55);
