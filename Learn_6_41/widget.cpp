@@ -55,10 +55,10 @@ Widget::Widget(QWidget *parent) : QWidget(parent) {
 
   // Signals
   // CursorPosition Changed
-  connect(firstNameLineEdit, &QLineEdit::cursorPositionChanged, [=] {
-    qDebug() << "The current cursor position is: "
-             << firstNameLineEdit->cursorPosition();
-  });
+  //  connect(firstNameLineEdit, &QLineEdit::cursorPositionChanged, [=] {
+  //    qDebug() << "The current cursor position is: "
+  //             << firstNameLineEdit->cursorPosition();
+  //  });
 
   // EditingFinished: emited when user clicks enter or when line edit looses
   // focus.
@@ -82,6 +82,11 @@ Widget::Widget(QWidget *parent) : QWidget(parent) {
     qDebug() << "cityLineEdit Return Pressed ";
     button->setFocus();
   });
+
+  // Hint text
+  firstNameLineEdit->setPlaceholderText("First Name");
+  lastNameLineEdit->setPlaceholderText("Last Name");
+  cityLineEdit->setPlaceholderText("City");
 }
 
 Widget::~Widget() {}
