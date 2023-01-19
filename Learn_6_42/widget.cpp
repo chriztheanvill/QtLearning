@@ -17,4 +17,7 @@ void Widget::SetupUI() {
 
   QTextEdit *textEdit = new QTextEdit(this);
   textEdit->move(70, 55);
+
+  QTextEdit *dsome = new QTextEdit(this);
+  textEdit->move(49,29);
 }
